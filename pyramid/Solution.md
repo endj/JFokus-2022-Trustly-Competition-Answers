@@ -17,12 +17,15 @@ However, even if we could slice a pyramid in such a way to exploit this, there a
 Lets look at a pyramid from the side. There are 2 variations based on the length of the sides.
 
 odd length side view
-````
+
+```
      #
    # # #
  # # # # #
 ```
+
 even length side view
+
 ```
     # #
   # # # #
@@ -64,26 +67,34 @@ However, not every slice has the same length
 
 Consider the top view, where can we apply the formula?
 
+
+```
 1 1 1 1 1
 1 2 2 2 1
 1 2 3 2 1
 1 2 2 2 1
 1 1 1 1 1
+```
 
 Consider breaking out a quarter of the pyramid. We can now apply the formula to each quarter by applying it
 to each row which is now increasing.
 
+
+```
 1
 1 2
 1 2 3
 1 2 
 1
+```
 
 We can even optimize this further by only doing half a quarter and doubling the result.
 
+```
 1
 1 2
 1 2 3
+```
 
 However, at every step we need to be careful cause some parts get double counted.
 This includes the diagonals, the middles and even the center of the pyramid.
@@ -91,6 +102,7 @@ This includes the diagonals, the middles and even the center of the pyramid.
 Once we have the sum of a quarter, we know that 4 quarters makes a whole.
 
 Pseudo Code
+
 ```
 quartersSummed = blocksInQuarter() * 4
 
@@ -102,4 +114,5 @@ if pyramidLength is odd {
     result = quartersSummed - doubleCountedDiagonal() - doubleCountedCenter()
 }
 ```
+
 The exact calculations are slightly tricky but you can work them out on paper. 
