@@ -11,10 +11,13 @@ that "leaks" while on the same or a higher level, we know that every cell reacha
 If a path we explored does not touch a cell that "leaks" or reaches the side of the ship, then this path forms a lake which traps water ( on this level and on any lower levels ). How much water it can trap depends on how high the surrounding walls are. As we traverse the lake we can update each cell to tell how much water this cell holds.
 
 
+
+
+
 Consider the following illustrated example where water is trapped on level 1 and on level 2.
 As we traverse level 1 we will mark that the cell with coordinate (1,1) traps 1 unit of water.
 
-When we traverse level 2, we update the celläs watermark to 2 units of water. We can update it as follows
+When we traverse level 2, we update the cell's watermark to 2 units of water. We can update it as follows
 
 waterLevel of a cell = Max( current cell water level,  current levels lake border height - cell height)
 
