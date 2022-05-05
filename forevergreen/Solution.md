@@ -21,6 +21,7 @@ waterLevel of a cell = Max( current cell water level,  current levels lake borde
 
 
 Side View
+```
 
     ┌──┐     ┌──┐
  2  │  │xxxxx│  │
@@ -29,13 +30,18 @@ Side View
     ├──┼──┼──┼──┤
  0  │  │  │  │  │
     └──┴──┴──┴──┘
+```
+
+
 
 Top View
 
+```
 3 3 3
 3 1 3
 3 2 3
 3 3 3
+```
 
 As we traverse from level 0 all the way to the highest container, we will have marked all cells as either leaking
 and or how much water it traps. The total amount of trapped water can then be found by summing up all cells that trap water.
