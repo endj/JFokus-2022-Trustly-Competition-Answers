@@ -1,4 +1,4 @@
-This question can be tricky to solve efficently but since the input size is small enough, we can just brute force it with
+This question can be tricky to solve efficiently but since the input size is small enough, we can just brute force it with
 some minor optimizations.
 
 From the start we explore every possible trip that we have enough fuel to complete.

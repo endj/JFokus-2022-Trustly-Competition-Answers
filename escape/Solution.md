@@ -1,3 +1,3 @@
 You can either just play the game as intended or try to find the answer in the source code.
-I did not try to hard to hide the solution, searching for Javascripts base64 decoding method "atob" does not return any results cause the call is hiden using obfuscation techniques.
-However, keen eyes might see a string ending with '=' somwhere among the obfuscated code. If you decode the string you find the secret code.
+I did not try too hard to hide the solution, searching for Javascripts base64 decoding method "atob" does not return any results because the call is hidden using obfuscation techniques.
+However, keen eyes might see a string ending with '=' somewhere among the obfuscated code. If you decode the string you find the secret code.

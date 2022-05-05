@@ -2,7 +2,7 @@ In this question we have a program with functions which can call other functions
 
 In order to figure out the total number of calls, we can go function by function
 and count how many function calls are made. This involves recursively following each function call
-in since functions can call other functions.
+since functions can call other functions.
 
 A small optimisation we can do in this case is to store the number of functions a call will make in a lookup table
 once we figure it out. This way, the next time we encounter a function we have invoked before, we don't have to follow 

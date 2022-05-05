@@ -1,6 +1,6 @@
 We can either build a permutation tree with all combinations 
 of possible characters or we can use math to figure out the answer.
-Not much to this question other then making fun of Metaverse.
+Not much to this question other than making fun of Metaverse.
 
 
 Java Code

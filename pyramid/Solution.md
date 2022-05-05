@@ -1,7 +1,7 @@
 In this question we need to count a large number of blocks in a pyramid where some blocks have been removed.
 
 The first solution that might come to mind would be to allocate a 2d array the same size as the pyramid,
-go round and round layer by layer and writing down the heights at each cell. Afterwards, we just need to
+go round and round layer by layer and write down the heights at each cell. Afterwards, we just need to
 sum up each cell in the grid minus the layers that should be removed.
 
 If we try to allocate the array we will probably run out of memory. We can just use the same approach but without
@@ -14,7 +14,7 @@ If we can exploit this somehow, we can use the formula n(n + 1) / 2 to count the
 However, even if we could slice a pyramid in such a way to exploit this, there are other challenges.
 
 
-Lets look at a pyramid from the side. There are 2 variations based on the length of the sides.
+Let's look at a pyramid from the side. There are 2 variations based on the length of the sides.
 
 odd length side view
 
@@ -96,7 +96,7 @@ We can even optimize this further by only doing half a quarter and doubling the 
 1 2 3
 ```
 
-However, at every step we need to be careful cause some parts get double counted.
+However, at every step we need to be careful because some parts get double counted.
 This includes the diagonals, the middles and even the center of the pyramid.
 
 Once we have the sum of a quarter, we know that 4 quarters makes a whole.
